@@ -337,18 +337,25 @@
         height:400px;
       }
 
-      .small-card{
-        width:150px;
-        border-radius:20px;
+      .small-card card-left{
+         width:150px; 
+        border-radius:20px; 
+      
       }
+      /* .center-image img{
+        width: 200px;
+        
+      } */
 
       .product-card{
-        width:100%;
-        max-width:320px;
+        /* width:100%;
+        max-width:320px; */
+        display: none;
       }
 
       .product-card img{
-        height:240px;
+        /* height:240px; */
+        display: none;
       }
 
       .shop-btn{
@@ -492,13 +499,14 @@
     .bottom-btn{
       display:flex;
       justify-content:flex-end;
-      margin-top:35px;
+      /* margin-top:50px; */
     }
+    
 
     .shop-all{
       padding:20px 55px;
       border-radius:50px;
-      border:1px solid #888;
+      border:1px solid #9e9d9d;
       background:#d8d8d8;
       font-size:28px;
       cursor:pointer;
@@ -967,7 +975,7 @@
     }
 
     .payment img{
-      height:24px;
+      height:20px;
       object-fit:contain;
     }
 
@@ -1561,6 +1569,134 @@
 
   .icon{
     font-size: 1rem;
+  }
+}
+/* .wrapper1{
+  max-width:1400px;
+  margin:auto;
+  padding:0 20px;
+}
+
+.banner-grid1{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:30px;
+}
+
+.card{
+  position:relative;
+  overflow:hidden;
+  border-radius:28px;
+  background:#dfe6ef;
+  min-height:500px;
+
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+  padding:30px;
+}
+
+.card img{
+  position:absolute;
+  bottom:0;
+  left:50%;
+  transform:translateX(-50%);
+  height:95%;
+  object-fit:contain;
+  z-index:2;
+}
+
+.title{
+  position:absolute;
+  top:60px;
+  right:60px;
+  font-size:clamp(40px, 7vw, 90px);
+  letter-spacing:5px;
+  font-weight:300;
+  color:#000;
+  z-index:1;
+}
+
+.shop-btn{
+  position:absolute;
+  right:40px;
+  bottom:40px;
+  width:130px;
+  height:130px;
+  border-radius:50%;
+  background:#fff;
+  border:none;
+  cursor:pointer;
+  font-size:20px;
+  font-weight:500;
+  z-index:3;
+  transition:0.3s;
+}
+
+.shop-btn:hover{
+  transform:scale(1.05);
+}
+
+.bottom-btn{
+  display:flex;
+  justify-content:flex-end;
+}
+
+.shop-all{
+  padding:20px 55px;
+  border-radius:50px;
+  border:1px solid #9e9d9d;
+  background:#d8d8d8;
+  font-size:28px;
+  cursor:pointer;
+  transition:0.3s;
+} */
+
+/* =========================
+   RESPONSIVE FOR 768px
+========================= */
+
+@media (max-width:768px){
+
+  .banner-grid1{
+    grid-template-columns:1fr;
+    gap:20px;
+  }
+
+  .card{
+    min-height:420px;
+    padding:20px;
+  }
+
+  .card img{
+    height:80%;
+  }
+
+  .title{
+    top:30px;
+    right:25px;
+    font-size:50px;
+    letter-spacing:3px;
+  }
+
+  .shop-btn{
+    width:90px;
+    height:90px;
+    right:20px;
+    bottom:20px;
+    font-size:15px;
+  }
+
+  .bottom-btn{
+    justify-content:center;
+    margin-top:25px;
+    padding: 5px 5px;
+    width: 300px;
+  }
+
+  .shop-all{
+    padding:16px 35px;
+    font-size:20px;
   }
 }
 
